@@ -30,10 +30,6 @@ public class NewCarsSteps {
         clickOn.elementBy(NewCarsPage.BUTTON_FIND_YOUR_NEXT_CAR);
     }
 
-//    @Then("^\"(.*)\" model should be displayed in the list$")
-//    public void modelShouldBeDisplayedInTheList(String modelName) {
-//        assertThat(filteredCars.cardTitleList(), hasItem(modelName));
-//    }
 
     @Then("^\"(.*)\" model (should not be displayed|should be displayed) in the list$")
     public void modelShouldNotBeDisplayedInTheList(String modelName, String expectation) {
